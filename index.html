@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
-    <title>Todo List</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section class="todo">
-    <h2>To-do list</h2>
+  <div class="todo">
+    <h2>To-Do List</h2>
     <div class="input">
-        <input type="text" class="input-field" id="todoInput" placeholder="Add a new todo" />
-        <button class="btn">Add</button>
+      <input
+        id="todoInput"
+        class="input-field"
+        type="text"
+        placeholder="Add a new task..."
+      />
+      <button class="btn" id="addTaskButton">Add</button>
     </div>
-    <ul class="scroll">
-        <li id="todoList"></li>
-    </ul>
-    <div>
-        <hr class="counter" />
-        <div class="counter-container">
-        <p><span id="todoCount">0</span> items total</p>
-        <button id="deleteButton">Delete All</button>
+    <div id="todoList" class="scroll"></div>
+    <div class="counter-container">
+      <p>Total Tasks: <span id="todoCount">0</span></p>
+      <button id="deleteButton">Clear All</button>
     </div>
-    </div>
-</section>
-<footer>
-<div class="footer">
-    <p class="made-by">github/aelias-kan</p>
-</div> 
-</footer>
-          
-
+  </div>
+  <footer class="footer">
+    <p class="made-by">Github/aelias-kan</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
-  
-  
 </html>
